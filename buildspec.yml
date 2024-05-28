@@ -9,6 +9,8 @@ phases:
       - echo "Building the application..."
       - mkdir -p build
       - cp -R src/* build/
+      - cp appspec.yml build/
+      - cp -R scripts build/
 artifacts:
   files:
     - '**/*'
